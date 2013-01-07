@@ -1,11 +1,11 @@
 <div align="center">
+	<img src="https://raw.github.com/rafaelgandi/Skemo/master/Skemo_logo.png">
+	<br>
+	<br>
 	<img src="https://raw.github.com/rafaelgandi/Skemo/master/misc/skemo_web_interface.png">
 </div>
 
 <h2>SKEMO: The Subject Schedule Recommender</h2>
-<p align="center">
-	<img src="https://raw.github.com/rafaelgandi/Skemo/master/Skemo_logo.png">
-</p>
 <p>  
 	The project intends to recommend class schedule base on student’s convenience.
 	The  students  are  to  set  there  preferences  that  will  be  the  bases  for  the  plotting  of
