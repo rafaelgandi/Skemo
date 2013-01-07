@@ -1,5 +1,6 @@
-Skemo
-=====
+<div style="text-align:center" align="center">
+	<img src="https://raw.github.com/rafaelgandi/Skemo/master/misc/cd_design.jpg">
+</div>
 
 SKEMO: The Subject Schedule Recommender
   
