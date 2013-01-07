@@ -1,0 +1,60 @@
+@CHARSET "ISO-8859-1";
+
+/**
+ THIS IS THE STYLSHEET USED BY THE SKEMO DIALOG BOX (javascript)
+background-color: #796646;
+*/
+#dialog_container{
+	  width: 400px;
+	  
+	  position: absolute;
+	  top: -1000px;
+	  left: -1000px;
+	  display: none;
+	  
+	  font: 12px verdana;
+	  font-size: 12px;	  
+	  padding: 4px;
+	 /* border: thin solid #000000;*/
+}
+div#dialog_label{
+	height: 25px;
+	
+	text-align: left;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding: 2px;
+}
+button#dialog_close{
+	 width: 80px;
+	 height: 20px;
+	 
+	 float: right;
+	 text-align: center;
+	 font: 10px verdana;
+	 margin: 4px;
+}
+div#dialog_body{
+	
+	font: 12px verdana;
+	background-color: #D1C8A9;
+	text-align: left;
+	padding: 5px;
+}
+div#dialog_content{
+	width: 350px;
+}
+
+.d_border{
+
+	width: 5px;
+	height: 8px;
+	background-color: #796646;;
+	opacity: 0.9;
+	filter:alpha(opacity=90);
+	border-width: 0px;
+
+}
+.d_table{
+	border: thin solid #000000;
+}

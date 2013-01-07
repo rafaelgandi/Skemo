@@ -1,0 +1,298 @@
+
+
+
+
+
+
+
+
+                                             helpers.toolkit.js v2.0.1 [BETA VERSION]
+                                             ----------------------------------------       
+                                             
+                                                   PR0PERTIES AND MATHODS MANUAL
+
+
+
+
+PROPERTIES
+----------
+
+
+ 	COMPLETE             //ready state value...
+
+ 	STAT_OK              // status value...
+
+ 	VERSION              //CURRENT VERSION
+
+ 	AUTHOR               //THE AUTHOR
+
+ 	XHR_IE1              //EXPLORER OLD XHR PARAMETER
+
+ 	XHR_IE2              //EXPLORER NEW XHR PARAMETER
+ 	
+ 	postHeader           // THE VALUE OF THE CONTENT TYPE HEADER IF YOU ARE USING A POST IN AJAX
+
+ 	me                   // CURRENT PAGE LOCATION
+
+ 	camefrom             // PAGE REFERRER
+ 	
+ 	emailRegExp          // GENERIC EMAIL REGULAR EXPRESSION PATTERN
+ 	
+ 	usernameRegExp       // GENERIC USERNAME REGULAR EXPRESSION PATTERN ^______^
+
+
+    
+METHODS
+-------
+
+    getXHR()
+    --------
+  - THIS FUNCTION INITIALIZES THE XMLHttpRequest OBJECT IN A BROWSER SPECIFIC FASHION
+  - FOR AJAX...
+
+
+
+    gatherData(id)
+    --------------
+  - THIS IS THE  gatherData(id) FUNCTION WHICH GATHERS ALL THE VALUES OF A FROM AND CONVERTS THEM INTO A query string NAME 
+    VALUE PAIR THAT CAN BE PLACED WITHIN A CALL TO A SERVER SIDE PHP SCRIPT.
+  - select-multiple IS NOT SUPPORTED YET IN THIS VERSION   
+  - THE FUNCTION TAKES THE id OF THE FORM ELEMENT AS ITS PARAMETER.
+
+
+
+     getChecked(str formId, str thename)
+     -----------------------------------     
+     - CHECKS WHIC OF THE GIVEN RADIO/CHECKBOX IS SET.<b>
+     - PARAMETERS ARE THE FORM ID AND THE NAME OF THE CHECKBOXES/RADIO BUTTONS
+     - RETURNS AN ARRAY OF THE VALUES CHECKED OR FALSE IF NOTHING IS CHECKED.
+
+
+
+    include(str path)
+    -----------------    
+     - INCLUDES THE SCRIPT GIVEN TO IT AS PART OF THE CURRENT PAGE
+     - PARAMETERS IS THE PATH OF THE JAVASCRIPT FILE.
+     - RETURNS VOID IN THIS VERSION.
+
+
+
+    nv(n,v) NOT PART OF THE helper OBJECT
+    -------
+    - THE nv(n,v) FUNCTION MAKES A NAME VALUE PAIR FROM THE PARAMETERS GIVEN TO IT  
+    * n : THE NAME
+    * V : THE VALUE
+
+
+
+    c_alert(msg) NOT PART OF THE helper OBJECT
+    ------------
+    - THIS IS THE c_alert(msg) FUNCTION WHICH IS A CUSTOM ALERT DIALOGUE BOX, THIS ALERT BOX CAN BE COSTOMIZED TO
+      FIT THE DESIGN OF YOUR WEBSITE OR WEB APPLICATION. 
+
+
+
+    valOf(id)
+    ---------
+    - THIS FUNCTION RETURNS THE VALUE OF THE FORM ELEMENT WITH THE SPECIFIED id....
+
+
+
+    nameOf(id)
+    ----------
+    - THIS FUNCTION RETURNS THE NAME OF THE FORM ELEMENT WITH THE SPECIFIED id.... 
+
+
+
+    isEmpty(str theval)
+    -------------------
+  - THIS FUNCTION CHECKS IF THE FORM ELEMENT WITH THE SPECIFIED id IS EMPTY OR NOT.
+  - TAKES A STRING VALUE AS A PARAMETER
+  - RETURNS TRUE IF EMPTY AND FALSE IF NOT..... 
+
+
+   chkType(str chkme, str allowed)
+    -------------------------------
+  - THIS FUNCTION CHECKS IF TYPE EXTENSION IS AVAILABLE IN THE CHOICES THE USER PALCED IN 
+    THE allowed PARAMETER.  
+  - RETURNS TRUE IF THE VALUE IS ALLOWED AND FALSE IF NOT.....
+
+
+
+    evilSniffer()
+    -------------
+  - THIS FUNCTION CHECKS THE TYPE OF BROWSER THE USER IS USING ETHER MSIE OR NOT...   
+  - RETURNS "MSIE" IF IT IS Internet Explorer AND "NON-MSIE" IF NOT.....
+
+
+
+    regexpMatch(str compareMe, regexp regExp)
+    -----------------------------------------
+  - THIS FUNCTION EVALUATES A GIVEN STRING VALUE AND REGULAR EXPRESSION IF THEY MATCH..........   
+  - RETURNS TRUE IF ITS A MATCH AND FALSE IF IT ISN'T...
+
+
+
+    smlWindow(str loc,int w,int h)
+    ------------------------------
+  - THIS FUNCTION OPENS A JAVASCRIPT WINDOW WITH CUSTOMIZABLE WIDTH AND HEIGHT....... 
+
+
+     onEnter(event e)
+    -----------------
+  -  THIS FUNCTION DETERMINES IF THE ENTER KEY WAS PRESSED......
+
+
+    keyAction(event e,int ky,str jsaction)
+    -----------------------------------------
+  -  THIS FUNCTION DETERMINES WHAT ACTION IS TAKEN IF A CERTAIN KEY IS PRESSED......
+  -  RETURNS TRUE ON FAILURE AND FALSE IF SUCCESS.. A BIT WIERD ^___^
+
+
+
+     generateKeycode(e)
+    -------------------
+  -  GENERATES THE KEY CODE IN AN alert() FUNCTION..... 
+
+
+
+    formPart(str id,str thenames)     [is still very sketchy in this version]
+    -----------------------------
+  -  RETURNS A QUERY STRING BASED ON THE NAMES GIVEN TO IT.      
+  -  I DONT RECOMMEND USING THIS UNLESS UR REALLY SHORT ON TIME...
+
+
+
+    rollOver(str id, str imgpath)
+    -----------------------------
+  -  CREATES AN IMAGE ROLLOVER EFFECT.  
+
+
+
+    noTags(str str)
+    ---------------
+  -  CHECKS IF THE PASSED STRING HAS TAGS IN IT.
+  -  I DONT RECOMMEND BEING TO DEPENDENT ON THIS YOU MUST STILL CHECK IT ON THE SERVER SIDE SCRIPT (php) 
+
+
+
+    getQSVal(str valname)
+    ---------------------
+  -  SHOWS THE VALUE OF THE NAME GIVEN TO IT IN THE QUERY STRING
+  -  RETURNS THE VALUE IF FOUND AND FALSE IF NOT. 
+
+
+
+    xPos(int w)
+    ---------------
+  -  RETURNS THE CENTER X POSITON RELATIVE TO THE SCREEN
+  -  TAKES THE WIDTH OF THE ELEMENT TO CENTER.
+
+
+
+    yPos(int h)
+    ---------------
+  -  RETURNS THE CENTER Y POSITON RELATIVE TO THE SCREEN
+  -  TAKES THE HEIGHT OF THE ELEMENT TO CENTER. 
+
+
+
+    time()
+    ------
+  -  RETURNS THE CURRENT TIME AS A STRING<b>
+  -  IF YOU WANT TO CREATE A MOVING REALTIME CLOCK THIS MUST BE INCORPORATED WITH THE window.setTimeout() METHOD. 
+
+
+
+    todayIs()
+    ---------
+  -  RETURNS THE CURRENT DATE AS A STRING<b>
+  -  FORMAT [DAYOFWEEK MONTH DATE, YEAR].
+
+
+
+    isDigit(str check)
+    -------------------
+  -  CHECKS IF THE STRING VALUE PASSED TO IT IS A NUMERIC DIGIT
+  -  RETURNS TRUE IF DIGIT AND FALSE IF NOT
+
+
+
+    isAlpha(str check)
+    ------------------
+  -  CHECKS IF THE STRING VALUE PASSED TO IT IS ALPHABETIC
+  -  RETURNS TRUE IF ALPHABETIC AND FALSE IF NOT 
+
+
+
+    isAlnum(str check)
+    ---------
+  -  CHECKS IF THE STRING VALUE PASSED TO IT IS ALPHANUMERIC
+  -  RETURNS TRUE IF ALPHANUMERIC AND FALSE IF NOT
+
+
+
+    createDIV(array ids, array classes)
+    ----------------------------------
+  -  TAKES AN ARRAY OF DIV IDS AND CSS CLASS NAMES FOR THE DIVS 
+
+
+
+    tooltipPos(str id, event e)
+    ---------------------------
+  -  RETURNS THE X AND Y POSITION OF THE MOUSE POINTER RELATIVE TO THE CLIENT SCREEN 
+
+
+
+    setOpacity(str id, int opa)
+    ---------------------------
+  -  TAKES THE ID OF THE ELEMENT TO BE FADED AN THE INTENSITY OF THE OPACITY [0-10]
+  -  FADES A CERTAIN ELEMENT
+
+
+
+    addCover()
+    ----------
+  -  ADDS A BLACK SILOWET(forgive the spelling ;-)) COVER
+
+
+
+    removeCover()
+    ----------
+  -  REMOVES THE BLACK SILOWET(again forgive the spelling ;-)) COVER
+
+
+
+    changeBGColor(str theId, str thecolor)
+    --------------------------------------
+  -  CHANGES THE BACKGROUND OF A CERTAIN ELEMENT
+  -  TAKES THE ID OF THE ELEMENT AND THE COLOR OF THE DESIRED BACKGROUND 
+
+
+
+     fader(str theid,str shockColor,str origColor)
+    ----------------------------------------------
+  -  MAKES A FADING BACKGROUND EFFECT ON A CERTAIN ELELMENT.
+  -  TAKES THE ID OF THE ELEMENT, THE FADING COLOR OF THE ELEMENT, AND THE ELEMENTS ORIGINAL BACKGROUND 
+
+
+
+     datePickerConfig(array _ids)
+    ---------------------------
+  -  CALLED WHEN YOU MAKE USE OF THE HELPER CALENDAR DATE PICKER MODULE.
+  -  TAKES AN ARRAY OF IDS FROM A DIV TAG, WHICH IS THE CONTAINER OF THE TEXT FIELD/S....
+  -  MUST BE CALLED ON THE DOCUMENTS ONLOAD EVENT.
+  
+  
+     sure(str msg)
+    ---------------
+  -  A MORE ELEGANT CONFIRM DIALOG BOX ;-)..... 
+  
+  
+     inArray(mixed _needle,array _heystack)
+    ---------------------------------------
+  -  FINDS A SPECIFIED ELEMENT INSIDE AN ARRAY
+  -  MUCH LIKE PHP'S in_array() FUNCTION.
+  -  RETURN TRUE IF THE ELEMENT WAS FOUND AND FALSE IF NOT. 
+  
+  

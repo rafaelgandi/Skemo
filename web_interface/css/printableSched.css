@@ -1,0 +1,46 @@
+@CHARSET "ISO-8859-1";
+body{
+	font: 10pt verdana;
+	text-align: center;
+}
+.sked_table{
+	text-align: center;
+	width: 900px;
+	height: 400px;
+}
+
+/* new 02-26-09 */
+
+#p_container{
+ font-family:Tahoma;
+ border: 3px solid #867353;
+ width:900px;
+}
+#p_head{
+ margin: 0px;
+ padding: 10px;
+ text-align: center;
+ background-color: #D1C8A9;
+}
+
+#p_foot #end{
+ background-color: #867353; 
+ margin-top:22px;
+}
+#printButton{
+ border:1px solid black;
+ width:50px;
+ color:red;
+ background-color: #CCCCCC;
+ font-size:14px;
+ float:right;
+ font-weight:bold;
+}
+
+/* rafael's style */
+.odd_row{
+	background-color: #FFFFCC;
+}
+.even_row{
+	background-color: #FFFFFF;
+}

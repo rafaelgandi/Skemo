@@ -1,0 +1,15 @@
+@CHARSET "ISO-8859-1";
+
+ul#about_ul {
+	list-style-image: url(../images/favicon_skemo.ico);
+}
+ul#about_ul li {
+	padding: 10px;
+}
+p {
+	text-align: left;
+}
+.skemo_logo {
+	color: red;
+	font-weight: bold;
+} 

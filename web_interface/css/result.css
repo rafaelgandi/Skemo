@@ -1,0 +1,105 @@
+@CHARSET "ISO-8859-1";
+
+div.result_container{
+	font: 11px verdana;
+}
+table.sked_table{
+	text-align: center;	
+	border: medium dashed #ff6600;
+	font-size: 11px;
+	
+}
+table.sked_table tr:hover{
+	background-color: #D1C8A9;
+}
+.sked_table th{
+	text-align: center;
+	height: 30px;
+	background-color: #564933;
+	color: #FFFFFF;
+}
+.sked_table td{
+	text-align: center;
+	height: 30px;
+}
+.odd_row{
+	background-color: #FFFFCC;
+}
+.even_row{
+	background-color: #FFFFFF;
+}
+.result_note{
+	text-align: left;
+	padding: 4px;
+	margin: 5px;
+}
+.result_note strong{
+	color: red;
+}
+div.plot_details{
+	text-align: center;
+}
+.result_plotted{
+	background-color: #99ccff;
+	border: medium dashed #6699ff;
+	text-align: left;
+	padding: 4px;
+	margin: 5px;
+	width: 350px;	
+}
+.result_unplotted{
+	
+	background-color: #ffcccc;
+	border: medium dashed #FF0033;
+	text-align: left;
+	padding: 4px;
+	margin: 5px;
+	width: 380px;
+	
+}
+div.print_save_div{
+	text-align: center;
+	width: 400px;
+}
+.result_link{
+	text-decoration: none;
+	color: #584B35;
+	font-weight: bold;
+}
+.result_link:hover{
+	text-decoration: underline;
+}
+a#printSched{
+	float: right;
+}
+a#saveSched{
+	float: left;
+}
+a#unplottedReasons{
+	font-weight: bold;
+	color: red;
+	text-decoration: none;
+}
+a#unplottedReasons:hover{
+	text-decoration: underline;
+}
+div#pref_container {
+	
+	width: 700px;
+	border: thin solid red;
+	padding: 5px;
+	background-color: #D1C8A9;
+	
+}
+.pref_container_table {
+	width: 700px;
+}
+.pref_label {
+	font-weight: bold;
+	color: red;
+	text-decoration: underline;
+	padding-bottom: 10px;
+}
+.label {
+	font-weight: bold;
+}

@@ -1,0 +1,20 @@
+VB6 TO MYSQL
+
+http://www.base64.co.uk/mysql-odbc-driver/
+
+VB6 EXCEL READING
+
+http://p2p.wrox.com/topic.asp?TOPIC_ID=58
+http://blogs.msdn.com/rahulso/archive/2006/12/15/Open-excel-file-with-vb6-and-read-the-content.aspx
+http://stackoverflow.com/questions/229404/ignored-columns-using-vb6-to-extract-from-excel
+http://bytes.com/forum/thread530866.html
+http://visualbasic.ittoolbox.com/groups/technical-functional/vb-db-l/importing-data-from-excel-worksheet-using-vb6-1517940
+
+PHP EXEC
+
+http://www.php.net/function.exec
+find: 'START'
+
+DONT SHOW VB6 APP
+
+http://www.dreamincode.net/forums/showtopic10681.htm

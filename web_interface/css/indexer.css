@@ -1,0 +1,29 @@
+@CHARSET "ISO-8859-1";
+
+#response_container{
+	position:absolute;
+	left: -1000px;
+	top: -1000px;
+	display: none;
+}
+.toggle_span{
+	cursor: hand; /* for ie */
+	cursor: pointer; /* for mozilla */
+}
+
+strong{
+	color: #887555;
+	text-decoration: underline;
+	font-weight: bold;
+}
+.screen_shot{
+	border: thin solid red;
+	margin: 8px;
+}
+dfn a{
+	text-decoration: none;
+	color: #887555;
+}
+dfn a:hover{
+	text-decoration: underline;
+}

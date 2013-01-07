@@ -1,0 +1,53 @@
+@CHARSET "ISO-8859-1";
+
+body{
+ background-image:url(images/bgrepeat.jpg);
+ background-repeat:repeat-x;
+ background-color: #D1C8A9;
+}
+#container{
+ width:859px; padding:5px;
+}
+#top{
+ background:url(images/top.png) no-repeat center;
+}
+.filler{
+ background:url(images/drop.png) repeat-y center;
+ 
+}
+#bottom{
+ background:url(images/bottom.png) no-repeat center;
+ clear:both;
+}
+#nav{
+ text-align:left;
+}
+#logo{
+ width:100px;
+ margin:0px 0 0 25px;
+}
+#window{
+ border:1px solid black;
+ width:600px;
+ float:right;
+ margin:7px;
+}
+#test{
+ border:1px dashed black;
+ width:798px;
+ background-color: #E8E8E8;
+ 
+}
+#testButton{
+ font: normal 14px Verdana;
+ border:1px solid black;
+ width: 120px;
+ padding:2px;
+ 
+}
+#navs{
+ margin:10px 5px 0px 5px;
+}
+#footer{
+ margin-top:80px;
+}
